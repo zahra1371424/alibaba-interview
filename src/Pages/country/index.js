@@ -30,7 +30,7 @@ const Country = () => {
         }
       }
     })();
-  }, []);
+  }, [dispatch]);
 
   return <>{loading ? <LoadingComponent /> : <Countries />}</>;
 };

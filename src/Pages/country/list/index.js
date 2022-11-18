@@ -19,7 +19,7 @@ const Countries = () => {
         type: "FILTER_COUNTRY",
         payload: filter,
       });
-  }, [filter]);
+  }, [filter, dispatch]);
 
   return (
     <>

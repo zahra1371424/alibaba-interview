@@ -10,10 +10,10 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { getTheme } from "./utility/util";
 
 function App() {
-  const countries = getStorage("countries");
   const { dispatch } = useContext(CountryContext);
-
   useEffect(() => {
+    const countries = getStorage("countries");
+
     let theme = getStorage("theme");
     if (!theme) {
       theme = getTheme()[0];
@@ -23,7 +23,7 @@ function App() {
     if (countries) {
       dispatch({ type: "SET_COUNTRIES", payload: countries });
     }
-  }, []);
+  }, [dispatch]);
 
   return (
     <div className="App">
