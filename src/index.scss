@@ -1,0 +1,26 @@
+@import "./style/color.scss";
+@import "./style//font-family.scss";
+
+body {
+  margin: 0;
+  font-family: "NunitoSans-Light" !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  &.light-mode {
+    background-color: var(--light-gray--light)
+  }
+  &.dark-mode {
+    background-color: var(--very-dark-blue--dark);
+    color: var(--white) !important;
+  }
+}
+.font-bold {
+  font-family: "NunitoSans-Bold" !important;
+}
+ul {
+  li {
+    list-style: none;
+  }
+}
+
+

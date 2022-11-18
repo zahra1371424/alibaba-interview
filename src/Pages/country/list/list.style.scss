@@ -1,0 +1,33 @@
+.home-page {
+    font-size: 14px;
+    .flag-img {
+        height: 150px !important;
+        img {
+            object-fit: cover;
+        }
+    }
+    .card {
+        cursor: pointer;
+    }
+}
+.dark-mode {
+    .home-page {
+        color: var(--white);
+    }
+    .card {
+        background-color: var(--dark-blue--dark);
+        box-shadow: 0 2px 2px 0 rgba(0,0,0,.1);
+    }
+    input,
+    select {
+        background-color: var(--dark-blue--dark);
+        color: var(--white);
+        border-radius: 3px;
+        box-shadow: 0 2px 2px 0 rgba(0,0,0,.1);
+        border: none;
+        &:focus {
+            background-color: var(--dark-blue--dark);
+            color: var(--white);
+        }
+    }
+}

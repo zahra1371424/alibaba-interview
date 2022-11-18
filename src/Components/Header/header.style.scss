@@ -1,0 +1,30 @@
+
+.navbar-area {
+    padding: 15px 0 !important;
+    .title {
+        font-weight: 800;
+    }
+    .change-theme {
+        border: none;
+        background: transparent;
+        font-weight: 600;
+    }
+}
+
+.light-mode {
+    .navbar-area {
+        background-color: var(--white);
+        box-shadow: 0 2px 2px 0 rgba(0,0,0,.1);
+    }
+}
+.dark-mode {
+    .navbar-area {
+        background-color: var(--dark-blue--dark);
+        box-shadow: 0 2px 2px 0 rgba(0,0,0,.1);
+    }
+    .title,
+    .change-theme
+     {
+        color: var(--white) !important;
+    }
+}
