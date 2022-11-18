@@ -1,5 +1,5 @@
 import { useContext, useEffect } from "react";
-import { Badge, Button, Container, Image, Row } from "react-bootstrap";
+import { Badge, Button, Container, Row } from "react-bootstrap";
 import { useNavigate, useParams } from "react-router-dom";
 import { CountryContext } from "../../../context";
 import "./detail.style.scss";
@@ -10,7 +10,7 @@ const CountryDetails = () => {
   const navigate = useNavigate();
   useEffect(() => {
     dispatch({ type: "GET_COUNTRY", payload: id });
-  }, [id]);
+  }, [dispatch, id]);
 
   return (
     <>
@@ -26,7 +26,11 @@ const CountryDetails = () => {
         <Row className="py-5">
           <div className="col-12 col-md-6 ">
             <div className="flag-area pe-0 pe-md-5 d-flex align-items-center">
-              <img src={state?.selectedCountry?.flag} loading="lazy" />
+              <img
+                src={state?.selectedCountry?.flag}
+                loading="lazy"
+                alt={state?.selectedCountry?.name}
+              />
             </div>
           </div>
           <div className="col-12 col-md-6 px-4 px-md-0">
@@ -126,6 +130,7 @@ const CountryDetails = () => {
                         </Badge>
                       </small>
                     );
+                  return null;
                 })
               )}
             </div>
