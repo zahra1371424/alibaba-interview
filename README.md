@@ -6,6 +6,15 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 In the project directory, you can run:
 
+### `Demo`
+
+Open the app in the production mode.\
+Open [https://chimerical-crisp-b5c62f.netlify.app/](https://chimerical-crisp-b5c62f.netlify.app/) to view it in your browser.
+
+### `Description`
+
+This app supports cache for reduce api requests.
+
 ### `npm start`
 
 Runs the app in the development mode.\
@@ -68,5 +77,5 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-"# country-api" 
-"# alibaba-interview" 
+"# country-api"
+"# alibaba-interview"
